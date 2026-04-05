@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Twitter, Mail, Phone, MapPin, ChevronRight, Linkedin } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
                     <div className="space-y-6">
                         <Link to="/" className="inline-block group">
                             <div className="flex items-center gap-3">
-                                <img src="/src/assets/logo.png" alt="Logo" className="h-12 w-12 rounded-xl group-hover:opacity-100 transition-opacity" />
+                                <img src={logo} alt="Logo" className="h-12 w-12 rounded-xl group-hover:opacity-100 transition-opacity" />
                                 <span className="text-3xl font-extrabold tracking-tight">
                                     Rozgaar<span className="text-green-400">Setu</span>
                                 </span>

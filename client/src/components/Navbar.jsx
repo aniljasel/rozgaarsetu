@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Button from './Button';
 import { useLanguage } from '../context/LanguageContext';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const { language: lang, toggleLanguage: toggleLang, t } = useLanguage();
@@ -73,7 +74,7 @@ const Navbar = () => {
                                 navigate('/');
                             }
                         }} className="flex items-center gap-3 group bg-transparent border-none outline-none cursor-pointer">
-                            <img src="/src/assets/logo.png" alt="Logo" className="h-12 w-12 md:h-16 md:w-16 object-contain transition-transform group-hover:scale-105" />
+                            <img src={logo} alt="Logo" className="h-12 w-12 md:h-16 md:w-16 object-contain transition-transform group-hover:scale-105" />
                             <span className="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
                                 <span className="text-green-600">Rozgaar</span>Setu
                             </span>
