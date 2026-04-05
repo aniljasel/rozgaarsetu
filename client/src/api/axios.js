@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance pointing to the proxy or backend URL
 const api = axios.create({
-    baseURL: '/api',
+    baseURL: import.meta.env.VITE_API_URL || '/api',
     headers: {
         'Content-Type': 'application/json'
     }
