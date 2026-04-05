@@ -65,7 +65,7 @@ const Navbar = () => {
                         {/* Logo */}
                         <button onClick={() => {
                             if (user) {
-                                if (user.isProfileSetup) {
+                                if (user.name) {
                                     navigate(`/${user.role}/dashboard`);
                                 } else {
                                     navigate(`/${user.role}/profile-setup`);
