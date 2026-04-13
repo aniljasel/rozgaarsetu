@@ -55,13 +55,13 @@ const Footer = () => {
                         <h3 className="text-xl font-bold mb-8 text-green-400">Our Services</h3>
                         <ul className="space-y-4">
                             {[
-                                { name: "Find Workers", path: "/workers" },
-                                { name: "Post a Job", path: "/jobs" },
-                                { name: "Worker Registration", path: "/role-select?role=worker" },
-                                { name: "Verified Skills", path: "/about" }
+                                { name: "Find Workers", path: "/login", state: { role: 'customer' } },
+                                { name: "Post a Job", path: "/login", state: { role: 'customer' } },
+                                { name: "Find Jobs", path: "/login", state: { role: 'worker' } },
+                                { name: "Worker Registration", path: "/login", state: { role: 'worker' } }
                             ].map((link, idx) => (
                                 <li key={idx}>
-                                    <Link to={link.path} className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center gap-2 text-lg">
+                                    <Link to={link.path} state={link.state} className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center gap-2 text-lg">
                                         <ChevronRight size={16} className="text-green-500" /> {link.name}
                                     </Link>
                                 </li>
@@ -112,7 +112,7 @@ const Footer = () => {
                     <div className="flex gap-6">
                         <Link to="/privacy" className="hover:text-white transition-colors">Terms of Service</Link>
                         <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                        <Link to="/contact" className="hover:text-white transition-colors">Cookie Policy</Link>
+                        <Link to="/privacy" className="hover:text-white transition-colors">Cookie Policy</Link>
                     </div>
                 </div>
             </div>

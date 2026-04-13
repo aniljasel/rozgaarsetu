@@ -68,7 +68,7 @@ const Privacy = () => {
 
                     {/* Aadhaar & Data Sharing Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                        <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-400 hover:shadow-xl transition-shadow">
                             <div className="bg-orange-50 p-3 rounded-2xl w-fit mb-6">
                                 <UserCheck size={32} className="text-orange-600" />
                             </div>
@@ -80,7 +80,7 @@ const Privacy = () => {
                             </ul>
                         </div>
 
-                        <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                        <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-400 hover:shadow-xl transition-shadow">
                             <div className="bg-teal-50 p-3 rounded-2xl w-fit mb-6">
                                 <Database size={32} className="text-teal-600" />
                             </div>
